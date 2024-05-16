@@ -1,19 +1,19 @@
 {
   "name": "presskit",
-  "version": "0.13.0",
-  "description": "Re-implementation of presskit() as a static site generator",
+  "version": "1.0.0",
+  "description": "A static site generator for press kits",
   "license": "MIT",
-  "repository": "pixelnest/presskit.html",
+  "repository": "Tsukumogami-Software/presskit.html",
   "author": {
-    "name": "Pixelnest Studio",
-    "url": "https://pixelnest.io/"
+    "name": "Tsukumogami Software",
+    "url": "https://tsukumogami.software/"
   },
   "keywords": [
     "presskit",
     "static site generator"
   ],
-  "homepage": "https://github.com/pixelnest/presskit.html#readme",
-  "bugs": "https://github.com/pixelnest/presskit.html/issues",
+  "homepage": "https://github.com/Tsukumogami-Software/presskit.html#readme",
+  "bugs": "https://github.com/Tsukumogami-Software/presskit.html/issues",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
