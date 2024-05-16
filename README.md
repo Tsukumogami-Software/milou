@@ -1,8 +1,6 @@
 # ![presskit.html](header.png)
 
-> Re-implementation of presskit() as a static site generator
-
-[![Code Style - Standard](https://badgen.net/badge/code%20style/standard/f2a)](http://standardjs.com/)
+**presskit.html** is a tool to create a presskit for your company, products or games.
 
 * [Why presskit.html?](#why)
 * [Showcase](#showcase)
@@ -16,13 +14,7 @@
 
 _Forked from [Pixelnest/presskit.html](https://github.com/pixelnest/presskit.html) by [Tsukumogami Software](https://tsukumogami.software/)_
 
-This is a complete re-implementation, with a permissive MIT license, of [presskit()][dopresskit], which was originally created by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](http://www.vlambeer.com).
-
-Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future.
-
 ---
-
-**presskit.html** is a tool to create a presskit for your company, products or games.
 
 To quote the original [presskit()][dopresskit]:
 
@@ -42,24 +34,6 @@ Examples (built with **presskit.html**):
 The goal of **presskit.html** is to generate only static HTML pages — no PHP required at all. Just fill some XML data files, add some images, execute a command, and boom. It's done.
 
 **You already have a presskit and you want to use this tool instead of the old un-maintained PHP-based presskit()? [Read the migration guide](#migration-guide).**
-
-## Why
-
-**Why reimplement [presskit()][dopresskit]?** **presskit.html** is basically a static site generator for presskit(). Everything is built once on your computer, and then distributed as static files to your users.
-
-We love the concept behind static site generators like [Jekyll](https://jekyllrb.com) or [Hugo](https://gohugo.io). These tools create lightweight static HTML pages, which are, by design, more secure and efficient than using a PHP server, for example.
-
-Moreover, if you use one of these tools to build your company or product's website, you can simply drop the result of **presskit.html** into your site directly, whatever the technology you are using — it's just HTML pages, after all. 😉
-
-That's mainly why we built **presskit.html** — that's how we make our websites, and we can integrate our presskits more easily this way.
-
-We have also added some nice little things (like thumbnails generation, a "Press Copy Request" button, widgets integration, relations between products or an optional hamburger menu, for example) and created a more robust implementation of presskit() (which is, unfortunately, un-maintained since 2014).
-
-However, _we have tried to be as close as possible to the original presskit format and style._ In fact, comparing the output of **presskit.html** with the one of presskit() should be almost indistinguishable.
-
-This is by design: the aim of the original presskit() was to create an instantly-recognizable website — almost a standard in the videogame industry.
-
-You already have a presskit? Just try it: [follow our migration guide](#migration-guide), run **presskit.html** in the folder containing your presskit()-based `data.xml` and `images/` and you will have a ready to deploy set of HTML pages which are almost identical to what you already have.
 
 ## Installation
 
@@ -145,9 +119,14 @@ The arborescence above should generate a build folder containing:
 
 Simply copy **all** the files in the `build/` folder to your server… and you're done!
 
-_Note: the webserver is **not** included._
+You can then use any web server to turn that into a website.
+For example:
 
-You can also [try our example](https://github.com/Tsukumogami-Software/presskit.html/blob/master/data/data.xml) from this repository, available online [here](http://pixelnest.io/presskit.html/example/).
+```
+npx http-server .
+```
+
+You can also [try our example](https://github.com/Tsukumogami-Software/presskit.html/blob/master/data/data.xml) from this repository.
 
 ### Additional options of `presskit build`
 
@@ -296,142 +275,15 @@ There's a small trick to know: if you provide one (or both) of these zips in you
 
 That's purely optional, and most products or games won't need a specially crafted archive. 😉
 
-## Migration Guide
-
-This tool is almost a drop-in replacement for presskit() (well, except for the fact that it generates HTML instead of using a PHP back-end — but that's simpler, not harder). Which mean that you can go in your folder containing the `data.xml` and `images/`, run `presskit build` and boom, you're done.
-
-_Well, almost._
-
-We have made some breaking changes between this format and the original presskit() format. But be reassured: they are fairly small, and are, indeed, useful.
-
-Follow the guide.
-
-### URLs
-
-This re-implementation of presskit() has a big difference: all your product URLs will break. With presskit(), you pointed to `/sheet.php?p=MYSUPERGAME` for the `MYSUPERGAME` page. Here, you will point to `/MYSUPERGAME/` directly (the `index.html` is not required, which makes prettier URLs).
-
-**This can't be changed.** We don't use PHP, but simple, robust and lightweight HTML files, and this difference is inevitable.
-
-### External URLs
-
-presskit() didn't require the protocol (ie., `http` or `https`) for most URLs in the `data.xml`.
-
-For example:
-
-```xml
-<socials>
-  <social>
-    <name>twitter.com/pixelnest/</name>
-    <link>twitter.com/pixelnest/</link>
-  </social>
-</socials>
-```
-
-Note that the `<link>` has no `http` or `https` protocol before its destination.
-
-The problem with that is that we cannot deduce the protocol automatically. It will work seamlessly for the biggest sites like Facebook or Twitter, but we cannot guarantee that it will link correctly for everything.
-
-That's why we require that you specify the protocol for your URLs:
-
-```xml
-<socials>
-  <social>
-    <name>twitter.com/pixelnest/</name>
-    <link>https://twitter.com/pixelnest/</link>
-  </social>
-</socials>
-```
-
-Otherwise, the URL will be relative to your presskit, and thus, will break.
-
-### Company `data.xml`
-
-**This is recommended, but presskit.html is smart enough to detect the company `data.xml` automatically, if your file structure is correct.**
-
-Your main `data.xml` containing your company information should use a `<company></company>` root tag for your XML document.
-
-Before:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<game>
-  <title>Pixelnest Studio</title>
-  <!-- The rest -->
-</game>
-```
-
-After:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<company>
-  <title>Pixelnest Studio</title>
-  <!-- The rest -->
-</company>
-```
-
-**Why?** It allows us to better differentiate the main `data.xml` from the others. And moreover, it does not make sense that the company `data.xml` is considered as a `<game>`, right?
-
-### Release dates
-
-The original presskit() assumed that you had only one release date for a product or game. And we all know that it's simply not true.
-
-That's why we handle multiple release dates.
-
-So, in your product/game `data.xml`, you must change your `<release-date>` tag.
-
-Before:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<product>
-  <title>My Super Game</title>
-  <release-date>04 Feb, 2016</release-date>
-  <!-- The rest -->
-</product>
-```
-
-After:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<product>
-  <title>My Super Game</title>
-  <release-dates>
-    <release-date>PC/Mac - 04 Feb, 2016</release-date>
-    <release-date>iOS/Android - 04 Feb, 2017</release-date>
-  </release-dates>
-  <!-- The rest -->
-</product>
-```
-
-**Why?** We all know that there's no single release date for a product or a game.
-
-### Contacts
-
-In each `data.xml`, you can set a list of contacts:
-
-```xml
-<contacts>
-  <contact>
-    <name>Inquiries</name>
-    <mail>contact@pizzaburger.studio</mail>
-  </contact>
-  <!-- Others -->
-</contacts>
-```
-
-In presskit(), you needed to set these informations _only in the company page_. Each product then retrieved the values from the company and added them automatically.
-
-We modified that: now, you **need** to set these informations everywhere. That way, you can change mails and links for each product individually.
-
----
-
 ## Credits
 
 ### [presskit()][dopresskit]
 
-This couldn't have be made without the awesome work of [Rami Ismail](https://twitter.com/tha_rami) the [presskit()][dopresskit] team and [Pixelnest Studio](http://pixelnest.io/). Thanks to them!
+This couldn't have be made without the awesome work of [Rami Ismail](https://twitter.com/tha_rami) the [presskit()][dopresskit] team and . Thanks to them!
+
+### [Pixelnest/presskit.html](https://github.com/pixelnest/presskit.html)
+
+The originl static version of presskit() was made by [Pixelnest Studio](http://pixelnest.io/). 
 
 ### Assets
 
