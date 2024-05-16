@@ -4,12 +4,11 @@ import path from "upath"
 import chalk from "chalk"
 import { Command } from "commander"
 import * as presskit from "../lib/index.js"
+import version from "../lib/helpers/version.js"
 
 // -------------------------------------------------------------
 // Constants.
 // -------------------------------------------------------------
-
-const version = process.env.npm_package_version
 
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
 

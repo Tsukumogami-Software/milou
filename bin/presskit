@@ -2,6 +2,7 @@
 
 import chalk from 'chalk'
 import { Command } from 'commander'
+import version from "../lib/helpers/version.js"
 
 // -------------------------------------------------------------
 // Constants.
@@ -17,7 +18,7 @@ const program = new Command()
 // -------------------------------------------------------------
 
 program
-  .version(process.env.npm_package_version)
+  .version(version)
   .description(description)
   .command('build [entrypoint]', 'build the presskit from the folder [entry point]')
   .command('new [destination]', 'create an empty template in the [destination] folder')
