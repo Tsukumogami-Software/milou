@@ -21,10 +21,12 @@
   "scripts": {
     "start": "node bin/presskit build --watch --dev data",
     "build": "node bin/presskit build data",
-    "test": "standard | snazzy && jest",
+    "test": "jest",
     "tester": "jest --watch",
     "docs": "./documentation",
-    "docs:example": "node bin/presskit build -DLM -o docs/example data"
+    "docs:example": "node bin/presskit build -DLM -o docs/example data",
+    "format": "standard --fix",
+    "lint": "standard | snazzy"
   },
   "dependencies": {
     "archiver": "^7.0.1",
