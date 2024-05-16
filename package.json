@@ -15,14 +15,15 @@
   "homepage": "https://github.com/pixelnest/presskit.html#readme",
   "bugs": "https://github.com/pixelnest/presskit.html/issues",
   "main": "lib/index.js",
+  "type": "module",
   "bin": {
     "presskit": "bin/presskit"
   },
   "scripts": {
     "start": "node bin/presskit build --watch --dev data",
     "build": "node bin/presskit build data",
-    "test": "jest",
-    "tester": "jest --watch",
+    "test": "vitest run",
+    "tester": "vitest",
     "docs": "./documentation",
     "docs:example": "node bin/presskit build -DLM -o docs/example data",
     "format": "standard --fix",
@@ -45,10 +46,10 @@
   },
   "devDependencies": {
     "docco": "https://github.com/solarsailer/docco.git#ea3aea536562aed574d63904e2c2ab0138f4b40a",
-    "jest": "^29.7.0",
     "mock-fs": "^5.2.0",
     "snazzy": "^9.0.0",
-    "standard": "^17.1.0"
+    "standard": "^17.1.0",
+    "vitest": "^1.6.0"
   },
   "standard": {
     "globals": [
@@ -60,8 +61,5 @@
       "describe",
       "expect"
     ]
-  },
-  "jest": {
-    "testEnvironment": "node"
   }
 }
