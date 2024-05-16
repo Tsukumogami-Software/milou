@@ -4,5 +4,5 @@ export default defineConfig({
   test: {
     include: ['**/*.test.js'],
     globals: true
-  },
+  }
 })
