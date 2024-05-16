@@ -1,21 +1,23 @@
 'use strict'
 
-const path = require('upath')
-const chalk = require('chalk')
-const program = require('commander')
-const presskit = require('../lib/index')
+import path from "upath"
+import chalk from "chalk"
+import { Command } from "commander"
+import * as presskit from "../lib/index.js"
 
 // -------------------------------------------------------------
 // Constants.
 // -------------------------------------------------------------
 
-const version = require('../package.json').version
+const version = process.env.npm_package_version
 
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
 
 const description = `Generate a presskit based on information found in \`data.xml\` files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')}. However, this command will generate static HTML files.
 
   More information on ${chalk.blue('https://github.com/pixelnest/presskit.html#usage')}.`
+
+const program = new Command()
 
 // -------------------------------------------------------------
 // Module.
