@@ -2,8 +2,6 @@
 
 > Re-implementation of presskit() as a static site generator
 
-![Build Status](https://travis-ci.org/pixelnest/presskit.html.svg?branch=master)
-[![NPM - Presskit](https://badgen.net/npm/v/presskit)](https://www.npmjs.com/package/presskit)
 [![Code Style - Standard](https://badgen.net/badge/code%20style/standard/f2a)](http://standardjs.com/)
 
 * [Why presskit.html?](#why)
@@ -16,11 +14,11 @@
 * [Migration Guide](#migration-guide)
 * [Credits](#credits)
 
-_Created by [Pixelnest Studio](http://pixelnest.io/)._
+_Forked from [Pixelnest/presskit.html](https://github.com/pixelnest/presskit.html) by [Tsukumogami Software](https://tsukumogami.software/)_
 
 This is a complete re-implementation, with a permissive MIT license, of [presskit()][dopresskit], which was originally created by [Rami Ismail](https://twitter.com/tha_rami) of [Vlambeer](http://www.vlambeer.com).
 
-Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future. Stay tuned by following our [Twitter account](https://twitter.com/pixelnest).
+Warning: **presskit.html** is, _currently_, a tool for developers. You need to know how to use the command-line — but that's all, to be honest. However, we plan to create a small app to simplify this process in the future.
 
 ---
 
@@ -63,52 +61,15 @@ This is by design: the aim of the original presskit() was to create an instantly
 
 You already have a presskit? Just try it: [follow our migration guide](#migration-guide), run **presskit.html** in the folder containing your presskit()-based `data.xml` and `images/` and you will have a ready to deploy set of HTML pages which are almost identical to what you already have.
 
-## Showcase
-
-Built with **presskit.html**:
-
-* [Pixelnest Studio](http://pixelnest.io/presskit/) ([source code](https://github.com/pixelnest/presskit/))
-* [Genix Lab](http://www.genix-lab.com/presskit/)
-* [Creative Brothers](http://www.creativebrothers.io/presskit/en/)
-
-<small>_You are using **presskit.html**? Tell us or submit a pull request!_</small>
-
-Want to compare with presskit() websites? Check these ones:
-
-* [Vlambeer](http://www.vlambeer.com/press/)
-* [Flying Oak Games](http://www.flying-oak.com/presskit/index.php)
-
-## Roadmap
-
-The roadmap is available on [Trello](https://trello.com/b/5T6BIyi3/open-source-presskit-html).
-
-## Quickstart for existing presskit users
-
-1. Install [Node.js](https://nodejs.org).
-2. Open your terminal ("Terminal" on macOS, "cmd" on Windows).
-3. Run `npm install -g presskit`.
-4. Type `cd`, press space, and drag the folder containing your `data.xml` files.
-5. Run `presskit build`.
-6. Open the `build/` folder, double-click on index.html and… 🍾
-
 ## Installation
 
 You will need a terminal and [Node.js](https://nodejs.org/).
 
-The simplest way to install **presskit.html** is to use [npm](http://npmjs.org/) (bundled with Node.js):
+The simplest way to install **presskit.html** is to use clone and link this repo:
 
 ```shell
-npm install -g presskit
-```
-
-(Feeling fancy? Use [Yarn](https://yarnpkg.com/en/) instead.)
-
-This should add a globally available `presskit` command to your shell.
-
-To update to a new version of **presskit.html**, just type:
-
-```shell
-npm update -g presskit
+git clone https://github.com/Tsukumogami-Software/presskit.html
+npm link
 ```
 
 ## Usage
@@ -186,7 +147,7 @@ Simply copy **all** the files in the `build/` folder to your server… and you'r
 
 _Note: the webserver is **not** included._
 
-You can also [try our example](https://github.com/pixelnest/presskit.html/tree/master/data) from this repository, available online here: http://pixelnest.io/presskit.html/example/.
+You can also [try our example](https://github.com/Tsukumogami-Software/presskit.html/blob/master/data/data.xml) from this repository, available online [here](http://pixelnest.io/presskit.html/example/).
 
 ### Additional options of `presskit build`
 
@@ -466,15 +427,11 @@ We modified that: now, you **need** to set these informations everywhere. That w
 
 ---
 
-## Pixelnest Studio
-
-[Pixelnest Studio](http://pixelnest.io/) is a small indie company, creating games and apps. You can contact us on [Twitter at @pixelnest](https://twitter.com/pixelnest). Want to check our game, Steredenn? Go to http://steredenn.pixelnest.io/.
-
 ## Credits
 
 ### [presskit()][dopresskit]
 
-This couldn't have be made without the awesome work of [Rami Ismail](https://twitter.com/tha_rami) and the [presskit()][dopresskit] team. Thanks to them!
+This couldn't have be made without the awesome work of [Rami Ismail](https://twitter.com/tha_rami) the [presskit()][dopresskit] team and [Pixelnest Studio](http://pixelnest.io/). Thanks to them!
 
 ### Assets
 
