@@ -41,15 +41,16 @@ program
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
 
+
 presskit.runBuildCommand({
   entryPoint: program.args[0],
-  cleanBuildFolder: program.cleanBuildFolder,
-  ignoreThumbnails: program.ignoreThumbnails,
-  prettyLinks: program.prettyLinks,
-  baseUrl: program.baseUrl,
-  hamburger: program.collapseMenu,
-  output: program.output,
-  watch: program.watch,
-  port: program.port,
-  dev: program.dev
+  cleanBuildFolder: program.opts().cleanBuildFolder,
+  ignoreThumbnails: program.opts().ignoreThumbnails,
+  prettyLinks: program.opts().prettyLinks,
+  baseUrl: program.opts().baseUrl,
+  hamburger: program.opts().collapseMenu,
+  output: program.opts().output,
+  watch: program.opts().watch,
+  port: program.opts().port,
+  dev: program.opts().dev
 })
