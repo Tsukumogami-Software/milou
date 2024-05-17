@@ -54,7 +54,7 @@ prices:
 # Relations allows linking multiple products together by their title
 relations:
   - type: DLC
-    product: My Super Game: Ultimate Edition
+    product: 'My Super Game: Ultimate Edition'
 
 # The product history
 histories:
@@ -78,7 +78,7 @@ trailers:
     youtube: EPNK1j3TMjU
   - name: Early Access Trailer
     youtube: EtyQMcc19xY
-  - name: Short gameplay preview: Burger vs Pizza
+  - name: 'Short gameplay preview: Burger vs Pizza'
     download: https://github.com/Tsukumogami-Software/presskit.html/archive/refs/heads/main.zip
 
 # Store links (ID)
