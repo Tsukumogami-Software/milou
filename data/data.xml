@@ -72,13 +72,6 @@
   <!-- This field is the primary mail address you want to give to the press. -->
   <press-contact>contact@pizzaburger.studio</press-contact>
 
-  <!--
-    Use this tag to set your Google analytics tracking code.
-
-    **It's, of course, completely optional.**
-  -->
-  <analytics>UA-42424242-0</analytics>
-
   <!-- ## Description & History -->
 
   <!-- The description is a simple short block to describe your company or studio. Be brief. -->

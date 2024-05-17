@@ -1,0 +1,22 @@
+type: company
+
+title: Pizza Burger Studio
+basedIn: Paris, France
+foundingDate: February 6, 2014
+website: pizzaburger.studio
+phone: +42 (3) 42 42 42 42 42
+
+address:
+  - 42 street of Pixelnest
+  - 35000 Rennes
+  - France
+
+socials:
+  - name: Twitter @pizzaburgerstudio
+    link: https://twitter.com/pizzaburgerstudio
+  - name: Facebook Page
+    link: https://facebook.com/pizzaburgerstudio
+  - name: Discord
+    link: https://discord.gg/pizzaburgerstudio
+
+pressContact: contact@pizzaburger.studio
