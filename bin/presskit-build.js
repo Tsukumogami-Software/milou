@@ -1,10 +1,10 @@
 'use strict'
 
-import path from "upath"
-import chalk from "chalk"
-import { Command } from "commander"
-import * as presskit from "../lib/index.js"
-import version from "../lib/helpers/version.js"
+import path from 'upath'
+import chalk from 'chalk'
+import { Command } from 'commander'
+import * as presskit from '../lib/index.js'
+import version from '../lib/helpers/version.js'
 
 // -------------------------------------------------------------
 // Constants.
@@ -39,7 +39,6 @@ program
   .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
-
 
 presskit.runBuildCommand({
   entryPoint: program.args[0],
