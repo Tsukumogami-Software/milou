@@ -1,0 +1,150 @@
+# --
+# This is a product data.yml. It should present a single product.
+# The easiest way to get started writing your own product data.yml is to run:
+#
+# presskit new -t product
+#
+# --
+
+type: product
+
+# General information
+title: My Super Game
+website: http://pizzaburger.studio/mysupergame
+
+# Simple and short description block for your product
+description: Here goes a quick description of your product or game
+
+# URL to request a copy
+pressCopyRequest: http://pizzaburger.studio/mysupergame/request/
+
+# Business partners: investors, publisers, etc...
+partners:
+  - type: Publisher
+    title: Pixelnest Studio
+    website: https://pixelnest.io/
+    basedIn: Rennes, France
+  - type: Distributor
+    title: Pizza Oven LLC
+
+# Release date(s)
+releaseDates:
+  - 04 Feb, 2024 (PC)
+  - 10 Oct, 2024 (Switch)
+
+# Platforms
+platfoms:
+  - name: PC / Mac
+    link: http://itch.io/
+  - name: Switch
+    link: http://nintendo.com/
+  - name: Inc New Store (TBA)
+
+# Prices (by currency)
+prices: 
+  - currency: EUR
+    value: 20
+  - currency: USD
+    value: 20
+  - currency: GBP
+    value: 20
+  - currency: JPY
+    value: 2300
+
+# Relations allows linking multiple products together by their title
+relations:
+  - type: DLC
+    product: My Super Game: Ultimate Edition
+
+# The product history
+histories:
+  - header: Add some storytelling here
+    text: Some backgrounds behind the creation process.
+  - header: Why are you developping this?
+    text: Most projects starts with a cool story.
+
+# The most important features of your product
+features:
+  - List some "Key Sellings Points".
+  - Don't be too generic, don't be too pretentious.
+  - People like numbers
+  - Have you translated / localized your product?
+
+# Videos from YouTube, Vimeo or direct download
+trailers:
+  - name: Release Trailer
+    youtube: EtXajayBLzw
+  - name: Gameplay Video #2
+    youtube: EPNK1j3TMjU
+  - name: Early Access Trailer
+    youtube: EtyQMcc19xY
+  - name: Short gameplay preview: Burger vs Pizza
+    download: https://github.com/Tsukumogami-Software/presskit.html/archive/refs/heads/main.zip
+
+# Store links (ID)
+widgets:
+  appstore: 950812012
+  playstore: com.noodlecake.altosadventure
+  steam: 347160
+  humble: steredenn/7SDLfk23hw
+  itch: 27992
+  bandcamp: 1135613467
+
+# Awards and nominations
+awards:
+  - description: Game of the year without a doubt
+    info: Saint-Père-Marc-En-Poulet (France), 04 February, 2016
+  - description: Best soundtrack
+    info: A great game festival (World), 01 October, 2015
+  - description: Best MYGAMENGINE game
+    info: Deep into the woods (Forest), 31 March, 2014
+
+# User / Reviewer appreciation
+quotes:
+  - description: This is my favorite game of all time.
+    name: Mum
+    website: At home
+    link: http://at.home/
+  - description: A very serious quote you're very proud of by someone you respect.
+    name: Master
+    website: Master's website
+    link: http://mast.er/
+  - description: 10/10 would play it again and again.
+    name: A friendly anonymous Steam reviewer
+    website: Steam review
+    link: http://steam.review/
+
+# Miscellaneous links
+additionals:
+  - title: Original Soundtrack (OST)
+    description: Composed by an awesome musician. Listen for free, download for $3 at
+    link: http://zandernoriega.bandcamp.com/album/steredenn-original-soundtrack
+  - title: Release announcement
+    description: Announcement are exciting, so we usually make blog posts or news about it on
+    link: http://pixelnest.io/journal/
+
+# Information about your company
+abouts:
+  - title: Tsukumogami Software
+    description: Tsukumogami Software is a software studio based in Breda, Netherlands.  We create games and software such as itako.app and the upcoming Dice'n Goblins game.
+  - title: Pizza Oven LLC
+    description: This is a fake company to illustrate the fact that you can have multiple about tags in your product page.
+
+# Staff
+credits:
+  - person: Alice GG
+    role: Software Engineer, Tsukumogami Software
+    website: https://alicegg.tech
+  - person: ColdEmber
+    role: Software Engineer, Tsukumogami Software
+
+# Additional contact informations
+contacts:
+  - name: Inquiries
+    mail: mysupergame@pizzaburger.studio
+  - name: Twitter
+    link: https://twitter.com/pizzaburgerstudio
+  - name: Facebook
+    link: https://facebook.com/pizzaburgerstudio
+  - name: Web
+    link: http://mysupergame.pizzaburger.studio/
