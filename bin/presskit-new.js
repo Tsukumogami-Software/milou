@@ -1,8 +1,8 @@
 'use strict'
 
-const chalk = require('chalk')
-const program = require('commander')
-const presskit = require('../lib/index')
+import chalk from 'chalk'
+import { Command } from 'commander'
+import * as presskit from '../lib/index.js'
 
 // -------------------------------------------------------------
 // Constants.
@@ -15,6 +15,8 @@ const usage = chalk.green('[options]') + ' ' + chalk.yellow('<destination>')
 const description = `Create an empty \`data.xml\` file and its \`images/\` folder in the <destination> folder (current working directory by default).
 
   There are two template types available: ${chalk.blue('company')} (default) or ${chalk.blue('product')}.`
+
+const program = new Command()
 
 // -------------------------------------------------------------
 // Module.

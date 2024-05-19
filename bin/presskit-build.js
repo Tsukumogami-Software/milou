@@ -1,5 +1,3 @@
-'use strict'
-
 import path from 'upath'
 import chalk from 'chalk'
 import { Command } from 'commander'

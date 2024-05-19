@@ -1,0 +1,99 @@
+# --
+# This is a product data.yml. It should present a single product.
+#
+# --
+
+type: product
+
+# General information
+title:
+website:
+
+# Simple and short description block for your product
+description:
+
+# URL to request a copy
+pressCopyRequest:
+
+# Business partners: investors, publisers, etc...
+partners:
+  - type:
+    title:
+    website:
+    basedIn:
+
+# Release date(s)
+releaseDates:
+  - 
+
+# Platforms
+platfoms:
+  - name:
+    link:
+
+# Prices (by currency)
+prices: 
+  - currency:
+    value:
+
+# Relations allows linking multiple products together by their title
+relations:
+  - type:
+    product:
+
+# The product history
+histories:
+  - header:
+    text:
+
+# The most important features of your product
+features:
+  -
+
+# Videos from YouTube, Vimeo or direct download
+trailers:
+  - name:
+    youtube:
+
+# Store links (ID)
+widgets:
+  appstore:
+  playstore:
+  steam:
+  humble:
+  itch:
+  bandcamp:
+
+# Awards and nominations
+awards:
+  - description:
+    info:
+
+# User / Reviewer appreciation
+quotes:
+  - description:
+    name:
+    website:
+    link:
+
+# Miscellaneous links
+additionals:
+  - title:
+    description:
+    link:
+
+# Information about your company
+abouts:
+  - title:
+    description:
+
+# Staff
+credits:
+  - person:
+    role:
+    website:
+
+# Additional contact informations
+contacts:
+  - name:
+    mail:

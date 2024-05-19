@@ -1,0 +1,66 @@
+# --
+# This is a company data.yml. It should present your whole company.
+#
+# --
+
+type: company
+
+# General information
+title:
+basedIn:
+foundingDate:
+website:
+phone:
+
+# Address is multiline
+address:
+  - 
+
+# Social media links
+socials:
+  - name: 
+    link: 
+
+# Primary email address for the press
+pressContact:
+
+# Simple and short description block for your company
+description:
+
+# The company history
+histories:
+  - header:
+    text:
+
+# Videos from YouTube, Vimeo or direct download
+trailers:
+  - name:
+    youtube:
+
+# Awards and nominations
+awards:
+  - description:
+    info:
+
+# Customers / Users appreciation
+quotes:
+  - description:
+    name:
+    website:
+    link:
+
+# Miscellaneous links
+additionals:
+  - title:
+    description:
+    link:
+
+# Staff
+credits:
+  - person:
+    role:
+
+# Full contact informations
+contacts:
+  - name:
+    mail:
