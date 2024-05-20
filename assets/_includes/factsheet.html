@@ -1,109 +1,140 @@
-<aside class="factsheet grid__item">
+<aside class="factsheet">
   <h2 id="factsheet" class="factsheet__title">Factsheet</h2>
 
   {{#if isCompany}}
   <dl class="factsheet__list">
-    <dt>Developer:</dt>
-    <dd>
-      <a href=".">{{presskit.title}}</a>
-    </dd>
-    <dd>Based in {{presskit.basedIn}}</dd>
+    <div>
+      <dt>Developer:</dt>
+      <dd>
+        <a href=".">{{presskit.title}}</a>
+      <dd>Based in {{presskit.basedIn}}</dd>
+    </div>
 
-    <dt>Founding date:</dt>
-    <dd>{{presskit.foundingDate}}</dd>
+    <div>
+      <dt>Founding date:</dt>
+      <dd>{{presskit.foundingDate}}</dd>
+    </div>
 
-    <dt>Website:</dt>
-    <dd>
-      <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
-    </dd>
+    <div>
+      <dt>Website:</dt>
+      <dd>
+        <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
+      </dd>
+    </div>
 
-    <dt>Press / Business contact:</dt>
-    <dd>
-      <a href="mailto:{{presskit.pressContact}}">{{presskit.pressContact}}</a>
-    </dd>
+    <div>
+      <dt>Press / Business contact:</dt>
+      <dd>
+        <a href="mailto:{{presskit.pressContact}}">{{presskit.pressContact}}</a>
+      </dd>
+    </div>
 
-    <dt>Social:</dt>
-    {{#each presskit.socials}}
-    <dd>
-      <a href="{{link}}">{{name}}</a>
-    </dd>
-    {{/each}}
+    <div>
+      <dt>Social:</dt>
+      {{#each presskit.socials}}
+      <dd>
+        <a href="{{link}}">{{name}}</a>
+      </dd>
+      {{/each}}
+    </div>
 
-    <dt>Releases:</dt>
-    {{#each products}}
-    <dd>
-      <a href="{{permalink path}}">{{title}}</a>
-    </dd>
-    {{/each}}
+    <div>
+      <dt>Releases:</dt>
+      {{#each products}}
+      <dd>
+        <a href="{{permalink path}}">{{title}}</a>
+      </dd>
+      {{/each}}
+    </div>
 
-    <dt>Address:</dt>
-    {{#each presskit.address}}
-    <dd>{{.}}</dd>
-    {{/each}}
+    <div>
+      <dt>Address:</dt>
+      {{#each presskit.address}}
+      <dd>{{.}}</dd>
+      {{/each}}
+    </div>
 
-    <dt>Phone:</dt>
-    <dd>{{presskit.phone}}</dd>
+    <div>
+      <dt>Phone:</dt>
+      <dd>{{presskit.phone}}</dd>
+    </div>
   </dl>
   {{/if}}
 
   {{#if isProduct}}
   <dl class="factsheet__list">
-    <dt>Developer:</dt>
-    <dd>
-      <a href="..">{{company.title}}</a>
-    </dd>
-    <dd>Based in {{company.basedIn}}</dd>
+    <div>
+      <dt>Developer:</dt>
+      <dd>
+        <a href="..">{{company.title}}</a>
+      </dd>
+      <dd>Based in {{company.basedIn}}</dd>
+    </div>
 
     {{#each presskit.partners}}
-    <dt>{{type}}:</dt>
-    <dd>
-      {{#if website}}
-        <a href="{{website}}">{{title}}</a>
-      {{else}}
-        {{title}}
-      {{/if}}
-    </dd>
-    {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
+    <div>
+      <dt>{{type}}:</dt>
+      <dd>
+        {{#if website}}
+          <a href="{{website}}">{{title}}</a>
+        {{else}}
+          {{title}}
+        {{/if}}
+      </dd>
+      {{#if basedIn}}<dd>Based in {{basedIn}}</dd>{{/if}}
+    </div>
     {{/each}}
 
-    <dt>Release date:</dt>
-    {{#each presskit.releaseDates}}
-    <dd>{{.}}</dd>
-    {{/each}}
+    <div>
+      <dt>Release date:</dt>
+      {{#each presskit.releaseDates}}
+      <dd>{{.}}</dd>
+      {{/each}}
+    </div>
 
-    <dt>Platforms:</dt>
-    {{#each presskit.platforms}}
-    <dd>
-      {{#if link}}
-        <a href="{{link}}">{{name}}</a>
-      {{else}}
-        {{name}}
-      {{/if}}
-    </dd>
-    {{/each}}
+    <div>
+      <dt>Platforms:</dt>
+      {{#each presskit.platforms}}
+      <dd>
+        {{#if link}}
+          <a href="{{link}}">{{name}}</a>
+        {{else}}
+          {{name}}
+        {{/if}}
+      </dd>
+      {{/each}}
+    </div>
 
-    <dt>Website:</dt>
-    <dd>
-      <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
-    </dd>
+    <div>
+      <dt>Website:</dt>
+      <dd>
+        <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
+      </dd>
+    </div>
 
-    <dt>Regular Price:</dt>
-    {{#each presskit.prices}}
-    <dd>{{currency}} {{value}}</dd>
-    {{/each}}
+    <div>
+      <dt>Regular Price:</dt>
+      {{#each presskit.prices}}
+      <dd>{{currency}} {{value}}</dd>
+      {{/each}}
+    </div>
 
     {{#each presskit.relations}}
-    <dt>{{type}}:</dt>
-    <dd>
-      <a href="{{permalink path}}">{{text}}</a>
-    </dd>
+    <div>
+      <dt>{{type}}:</dt>
+      <dd>
+        <a href="{{permalink path}}">{{text}}</a>
+      </dd>
+    </div>
     {{/each}}
 
     {{#each presskit.relationOf}}
-    <dt>{{type}} of:</dt>
-    <dd>
-      <a href="{{permalink path}}">{{text}}</a>
-    </dd>
+    <div>
+      <dt>{{type}} of:</dt>
+      <dd>
+        <a href="{{permalink path}}">{{text}}</a>
+      </dd>
+    </div>
     {{/each}}
   </dl>
 

@@ -4,10 +4,10 @@
     {{>head}}
   </head>
   <body>
-    <div class="page grid">
+    <div class="page">
       {{>nav}}
 
-      <div class="page-wrapper grid__item">
+      <div class="page-wrapper">
         <header class="page-header">
           {{#if images.header}}
           <img src="./images/{{images.header}}" alt="{{presskit.title}}" title="{{presskit.title}}">
@@ -15,10 +15,10 @@
         </header>
 
         <main class="page-content" role="main">
-          <section class="block grid">
+          <section class="block">
             {{>factsheet}}
 
-            <article class="description grid__item">
+            <article class="description">
               {{>description}}
 
               <h2 id="projects">Projects</h2>
