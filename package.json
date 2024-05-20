@@ -1,31 +1,32 @@
 {
-  "name": "presskit",
+  "name": "milou",
   "version": "1.0.0",
   "description": "A static site generator for press kits",
   "license": "MIT",
-  "repository": "Tsukumogami-Software/presskit.html",
+  "repository": "Tsukumogami-Software/milou",
   "author": {
     "name": "Tsukumogami Software",
     "url": "https://tsukumogami.software/"
   },
   "keywords": [
     "presskit",
+    "press kit",
     "static site generator"
   ],
-  "homepage": "https://github.com/Tsukumogami-Software/presskit.html#readme",
-  "bugs": "https://github.com/Tsukumogami-Software/presskit.html/issues",
+  "homepage": "https://github.com/Tsukumogami-Software/milou#",
+  "bugs": "https://github.com/Tsukumogami-Software/milou/issues",
   "main": "lib/index.js",
   "type": "module",
   "bin": {
-    "presskit": "bin/presskit"
+    "milou": "bin/milou"
   },
   "scripts": {
-    "start": "node bin/presskit build --watch --dev data",
-    "build": "node bin/presskit build data",
+    "start": "node bin/milou build --watch --dev data",
+    "build": "node bin/milou build data",
     "test": "vitest run",
     "tester": "vitest",
     "docs": "./documentation",
-    "docs:example": "node bin/presskit build -DLM -o docs/example data",
+    "docs:example": "node bin/milou build -DLM -o docs/example data",
     "format": "standard --fix",
     "lint": "standard | snazzy"
   },

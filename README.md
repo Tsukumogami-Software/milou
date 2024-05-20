@@ -1,6 +1,4 @@
-# ![presskit.html](header.png)
-
-**presskit.html** is a tool to create a presskit for your company, products or games.
+# 🐶 Milou a static press kit generator for your company and products
 
 * [Why presskit.html?](#why)
 * [Showcase](#showcase)

@@ -2,7 +2,7 @@
 # This is a product data.yml. It should present a single product.
 # The easiest way to get started writing your own product data.yml is to run:
 #
-# presskit new -t product
+# milou new -t product
 #
 # --
 
@@ -79,7 +79,7 @@ trailers:
   - name: Early Access Trailer
     youtube: EtyQMcc19xY
   - name: 'Short gameplay preview: Burger vs Pizza'
-    download: https://github.com/Tsukumogami-Software/presskit.html/archive/refs/heads/main.zip
+    download: https://github.com/Tsukumogami-Software/milou/archive/refs/heads/main.zip
 
 # Store links (ID)
 widgets:
