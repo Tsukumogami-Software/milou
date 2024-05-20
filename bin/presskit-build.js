@@ -4,21 +4,11 @@ import { Command } from 'commander'
 import * as presskit from '../lib/index.js'
 import version from '../lib/helpers/version.js'
 
-// -------------------------------------------------------------
-// Constants.
-// -------------------------------------------------------------
-
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
 
-const description = `Generate a presskit based on information found in \`data.xml\` files. The format and the ouput are (nearly) the same as ${chalk.blue('http://dopresskit.com/')}. However, this command will generate static HTML files.
-
-  More information on ${chalk.blue('https://github.com/pixelnest/presskit.html#usage')}.`
+const description = `Generate a presskit based on information found in \`data.yml\` files.`
 
 const program = new Command()
-
-// -------------------------------------------------------------
-// Module.
-// -------------------------------------------------------------
 
 program
   .version(version)

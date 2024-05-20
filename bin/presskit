@@ -4,12 +4,7 @@ import chalk from 'chalk'
 import { Command } from 'commander'
 import version from "../lib/helpers/version.js"
 
-// -------------------------------------------------------------
-// Constants.
-// -------------------------------------------------------------
-
-const description = `Re-implementation of ${chalk.blue('http://dopresskit.com/')} as a static site generator.
-  Read the documentation on ${chalk.blue('https://github.com/pixelnest/presskit.html')}.`
+const description = `A static press kit generator`
 
 const program = new Command()
 
