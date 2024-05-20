@@ -22,7 +22,6 @@ program
   .option('-d, --dev', 'add monitoring of CSS and templates in watch mode')
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
-  .option('-L, --pretty-links', 'hide index.html at the end of links')
   .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
@@ -31,7 +30,6 @@ presskit.runBuildCommand({
   entryPoint: program.args[0],
   cleanBuildFolder: program.opts().cleanBuildFolder,
   ignoreThumbnails: program.opts().ignoreThumbnails,
-  prettyLinks: program.opts().prettyLinks,
   baseUrl: program.opts().baseUrl,
   output: program.opts().output,
   watch: program.opts().watch,
