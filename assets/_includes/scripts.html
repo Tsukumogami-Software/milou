@@ -1,4 +1,10 @@
 <script>
+  (function() {
+    if (!window.location.href.endsWith('/')) {
+      window.location.href = window.location.href + '/'
+    }
+  })();
+
   document.addEventListener('DOMContentLoaded', function onContentLoaded() {
     // Add mini-player to gifs.
     var gifLinks = document.querySelectorAll('a[href$=".gif"]');
