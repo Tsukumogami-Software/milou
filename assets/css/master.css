@@ -302,6 +302,7 @@ a:hover {
 \* ---------------------------------------------------------- */
 
 .gallery {
+  margin-top: 2rem;
   font-size: 0; /* Disable the small space below the images. */
   width: 100%;
   -moz-column-gap: 20px;
@@ -436,6 +437,32 @@ a:hover {
 }
 
 .button:active {
+  color: white;
+  background: -webkit-linear-gradient(top, #3398ff, #0077dd);
+  background:         linear-gradient(to bottom, #3398ff, #0077dd);
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: 1em;
+  color: rgba(22, 22, 22, 0.8);
+  background-color: #70acc7;
+  border-radius: 5px;
+}
+
+.button-secondary:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(22, 22, 22, 0.8);
+  background-color: #7faabe;
+}
+
+.button-secondary:focus {
+  border: 1px solid #3398ff;
+  outline: none;
+}
+
+.button-secondary:active {
   color: white;
   background: -webkit-linear-gradient(top, #3398ff, #0077dd);
   background:         linear-gradient(to bottom, #3398ff, #0077dd);
