@@ -2,9 +2,9 @@
 <section class="block">
   <h2 id="widgets">Widgets</h2>
 
-  <div class="grid">
+  <div>
     {{#if presskit.widgets.appstore}}
-    <p class="grid__item">
+    <p>
       <a
         href="https://itunes.apple.com/app/id{{trim presskit.widgets.appstore}}"
         target="_blank"
@@ -15,7 +15,7 @@
     {{/if}}
 
     {{#if presskit.widgets.playstore}}
-    <p class="grid__item">
+    <p>
       <a
         href="https://play.google.com/store/apps/details?id={{trim presskit.widgets.playstore}}"
         target="_blank"

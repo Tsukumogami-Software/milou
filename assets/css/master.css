@@ -131,6 +131,7 @@ body {
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
+  gap: 2em;
 }
 
 @media (max-width: 600px) {
