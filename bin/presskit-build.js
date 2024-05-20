@@ -23,7 +23,6 @@ program
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
   .option('-L, --pretty-links', 'hide index.html at the end of links')
-  .option('-M, --collapse-menu', 'use a collapsed menu (hamburger) on small screens')
   .option('-B, --base-url [base]', 'prefix absolute urls with [base] (if your presskit is not at the root of your server)', '/')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
   .parse(process.argv)
@@ -34,7 +33,6 @@ presskit.runBuildCommand({
   ignoreThumbnails: program.opts().ignoreThumbnails,
   prettyLinks: program.opts().prettyLinks,
   baseUrl: program.opts().baseUrl,
-  hamburger: program.opts().collapseMenu,
   output: program.opts().output,
   watch: program.opts().watch,
   port: program.opts().port,
