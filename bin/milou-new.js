@@ -1,8 +1,7 @@
 import chalk from 'chalk'
 import { Command } from 'commander'
 import * as presskit from '../lib/index.js'
-
-const version = require('../package.json').version
+import version from '../lib/helpers/version.js'
 
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<destination>')
 
@@ -19,4 +18,4 @@ program
   .option('-t, --type [company]', 'set the type of the new `data.xml` file', 'company')
   .parse(process.argv)
 
-presskit.runNewCommand(program.type, program.args[0] || process.cwd())
+presskit.runNewCommand(program.opts().type, program.args[0] || process.cwd())
