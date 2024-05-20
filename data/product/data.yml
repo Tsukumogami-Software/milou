@@ -123,7 +123,7 @@ additionals:
     description: Announcement are exciting, so we usually make blog posts or news about it on
     link: http://pixelnest.io/journal/
 
-# Information about your company
+# Information about your partners (company is auto generated)
 abouts:
   - title: Tsukumogami Software
     description: Tsukumogami Software is a software studio based in Breda, Netherlands.  We create games and software such as itako.app and the upcoming Dice'n Goblins game.

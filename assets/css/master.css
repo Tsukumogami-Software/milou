@@ -303,7 +303,6 @@ a:hover {
 
 .gallery {
   margin-top: 2rem;
-  font-size: 0; /* Disable the small space below the images. */
   width: 100%;
   -moz-column-gap: 20px;
   -webkit-column-gap: 20px;
