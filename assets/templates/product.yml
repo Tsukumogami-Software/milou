@@ -15,7 +15,7 @@ description:
 # URL to request a copy
 pressCopyRequest:
 
-# Business partners: investors, publisers, etc...
+# Business partners: investors, publishers, etc...
 partners:
   - type:
     title:

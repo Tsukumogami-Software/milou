@@ -18,7 +18,7 @@ description: Here goes a quick description of your product or game
 # URL to request a copy
 pressCopyRequest: http://pizzaburger.studio/mysupergame/request/
 
-# Business partners: investors, publisers, etc...
+# Business partners: investors, publishers, etc...
 partners:
   - type: Publisher
     title: Pixelnest Studio

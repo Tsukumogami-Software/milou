@@ -36,12 +36,6 @@
   </div>
   {{/each}}
 </section>
-{{else}}
-<section class="block">
-  <h2 id="videos">Videos</h2>
-
-  <p>There are currently no trailers available for {{presskit.title}}. Check back later for more or <a href="#contact">contact us</a> for specific requests!</p>
-</section>
 {{/if}}
 
 {{#if hasScreenshots}}
@@ -96,11 +90,5 @@
     <img src="images/{{.}}" alt="{{basename .}}" class="logo">
   </a>
   {{/each}}
-</section>
-{{else}}
-<section class="block">
-  <h2 id="logo">Logo & Icon</h2>
-
-  <p>There are currently no logos or icons available for {{presskit.title}}. Check back later for more or <a href="#contact">contact us</a> for specific requests!</p>
 </section>
 {{/if}}
