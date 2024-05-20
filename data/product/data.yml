@@ -33,7 +33,7 @@ releaseDates:
   - 10 Oct, 2024 (Switch)
 
 # Platforms
-platfoms:
+platforms:
   - name: PC / Mac
     link: http://itch.io/
   - name: Switch
