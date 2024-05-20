@@ -1,22 +1,5 @@
-<script src="{{assets}}/js/masonry.min.js"></script>
-<script src="{{assets}}/js/imagesloaded.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function onContentLoaded() {
-    // Add masonry layout on the galleries.
-    var galleries = document.querySelectorAll('.gallery');
-
-    for (var i = 0; i < galleries.length; i++) {
-      (function (index) {
-        var gallery = galleries[index];
-
-        imagesLoaded(gallery, function onImagesLoaded() {
-          new Masonry(gallery, {
-            itemSelector: '.gallery__item'
-          });
-        });
-      })(i);
-    }
-
     // Add mini-player to gifs.
     var gifLinks = document.querySelectorAll('a[href$=".gif"]');
     for (var i = 0; i < gifLinks.length; i++) {

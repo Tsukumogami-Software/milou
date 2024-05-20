@@ -302,17 +302,26 @@ a:hover {
 \* ---------------------------------------------------------- */
 
 .gallery {
-  margin-left: -25px;
-
   font-size: 0; /* Disable the small space below the images. */
+  width: 100%;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  -moz-column-count: 1;
+  -webkit-column-count: 1;
+  column-count: 1;
 }
 
 .gallery__item {
-  float: left;
-
+  display: inline-block;
   width: 100%;
-  padding-bottom: 25px;
-  padding-left: 25px;
+}
+
+@media  (min-width:800px) {
+    .gallery {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+    }
 }
 
 .gallery__item img {
@@ -322,7 +331,7 @@ a:hover {
 .gallery__item a[href$=".gif"] {
   position: relative;
 
-  display: block;
+  display: inline-block;
 }
 
 .gallery__item a[href$=".gif"]:focus:active {
@@ -351,12 +360,6 @@ a:hover {
 
 .gallery__item a[href$=".gif"].show-overlay::after {
   display: flex;
-}
-
-@media (min-width: 500px) {
-  .gallery__item {
-    width: 50%;
-  }
 }
 
 /* ---------------------------------------------------------- *\
