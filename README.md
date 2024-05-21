@@ -1,9 +1,9 @@
-# 🐶 Milou a static press kit
+# 🐶 Milou a static press kit generator
 
 ![Screenshot](screenshot.png)
 
 Milou is a static site generator which helps you create beautiful and informative press kits to showcase your company and products to the press.
-Milou lets you present your brand story, press releases, media assets, and key team members in a structured and engaging manner.
+It lets you present your brand story, press releases, media assets, and key team members in a structured and engaging manner.
 
 ## Features
 
