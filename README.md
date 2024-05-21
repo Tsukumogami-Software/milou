@@ -130,6 +130,6 @@ Options:
 
 Milou was forked from presskit.html, made by [Pixelnest Studio](http://pixelnest.io/).
 
-### [presskit()][http://dopresskit.com]
+### [presskit()](http://dopresskit.com)
 
 Presskit.html was inspired by presskit(), made by [Rami Ismail](https://twitter.com/tha_rami).
