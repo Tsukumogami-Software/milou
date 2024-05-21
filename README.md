@@ -2,13 +2,13 @@
 
 ![Screenshot](screenshot.png)
 
-Milou is a static site generator which helps you create beautiful and informative press kits to showcase your company and products to the press.
+Milou is a static site generator that helps you create beautiful and informative press kits to showcase your company and products to the press.
 It lets you present your brand story, press releases, media assets, and key team members in a structured and engaging manner.
 
 ## Features
 
 * *Static site generation*: Milou generates static HTML files, with fast-loading times, accessibility by default, and responsive design
-* *YAML configuration*: Simple and human readable configuration format
+* *YAML configuration*: Simple and human-readable configuration format
 * *Boilerplate templates*: Let Milou give you a template configuration and fill in the blanks with your content
 
 ## Showcase
@@ -37,7 +37,7 @@ milou new
 ```
 
 The root directory of your project contains your company data.
-You should present your company by filling the generated `data.yml` file in this directory.
+You should present your company by filling in the generated `data.yml` file in this directory.
 You can use this [example](https://github.com/Tsukumogami-Software/milou/blob/main/data/data.yml) of a completed company `data.yml` file as a reference.
 
 You should put images for your company in the `images` subfolder.
@@ -54,7 +54,7 @@ cd mypresskit
 milou new -t product
 ```
 
-The product folders will contain data for your software, games or any other kind of products.
+The product folders will contain data for your software, games, or any other kind of product.
 Like for companies, write your content in the generated `data.yml` file in this directory.
 You can this [example](https://github.com/Tsukumogami-Software/milou/blob/main/data/product/data.yml) file as a reference.
 
@@ -83,7 +83,7 @@ From the root directory of your project, you can now build your static site:
 milou build .
 ```
 
-This will output the static HTML, CSS and images in the `build` folder.
+This will output the static HTML, CSS, and images in the `build` folder.
 You can now start a web server to serve your content:
 
 ```
@@ -91,7 +91,7 @@ cd build
 npx serve
 ```
 
-Upload this folder to any static site host (GitHub pages, Netlify, CloudFlare pages, etc...) to make your presskit accessible by the whole world.
+Upload this folder to any static site host (GitHub pages, Netlify, CloudFlare pages, etc...) to make your press kit accessible to the whole world.
 
 ## Command line reference
 
@@ -111,7 +111,7 @@ Options:
 ```
 milou build [options] <entry point>
 
-Generate a presskit based on information found in `data.yml` files.
+Generate a press kit based on information found in `data.yml` files.
 
 Options:
   -V, --version               output the version number

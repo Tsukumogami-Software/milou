@@ -6,7 +6,7 @@ import version from '../lib/helpers/version.js'
 
 const usage = chalk.green('[options]') + ' ' + chalk.yellow('<entry point>')
 
-const description = `Generate a presskit based on information found in \`data.yml\` files.`
+const description = 'Generate a presskit based on information found in `data.yml` files.'
 
 const program = new Command()
 
