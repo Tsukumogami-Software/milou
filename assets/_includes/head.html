@@ -10,16 +10,27 @@
 <meta property="twitter:description" content="{{rawText presskit.description}}" />
 {{/if}}
 
+
 {{#if company.baseURL}}
+
 {{#if images.header}}
 <meta property="og:image" content="{{company.baseURL}}/{{presskit.path}}/images/{{images.header}}" >
 <meta name="twitter:image" content="{{company.baseURL}}/{{presskit.path}}/images/{{images.header}}">
 {{/if}}
+{{#if images.logos}}
+<meta property="og:logo" content="{{company.baseURL}}/{{presskit.path}}/images/{{lookup images.logos 0}}">
+{{/if}}
+
 {{else if presskit.baseURL}}
+
 {{#if images.header}}
 <meta property="og:image" content="{{presskit.baseURL}}/images/{{images.header}}" >
 <meta name="twitter:image" content="{{presskit.baseURL}}/images/{{images.header}}">
 {{/if}}
+{{#if images.logos}}
+<meta property="og:logo" content="{{presskit.baseURL}}/images/{{lookup images.logos 0}}">
+{{/if}}
+
 {{/if}}
 
 
