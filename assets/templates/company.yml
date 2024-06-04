@@ -8,6 +8,9 @@ type: company
 # URL of your press kit
 baseURL:
 
+# Locale of the company page
+locale:
+
 # General information
 title:
 basedIn:

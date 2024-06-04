@@ -8,6 +8,9 @@
 
 type: product
 
+# Locale of the product page
+locale: en_GB
+
 # General information
 title: My Super Game
 website: http://pizzaburger.studio/mysupergame

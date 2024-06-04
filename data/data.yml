@@ -11,6 +11,9 @@ type: company
 # URL of your press kit
 baseURL: 'http://localhost:8080'
 
+# Locale of the company page
+locale: en_US
+
 # General information
 title: Pizza Burger Studio
 basedIn: Paris, France

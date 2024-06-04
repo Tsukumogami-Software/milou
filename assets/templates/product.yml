@@ -5,6 +5,9 @@
 
 type: product
 
+# Locale of the product page
+locale:
+
 # General information
 title:
 website:
