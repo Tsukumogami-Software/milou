@@ -104,7 +104,7 @@ Create an empty `data.yml` file and its `images/` folder in the <destination> fo
 
 Options:
   -V, --version         output the version number
-  -t, --type [company]  set the type of the new `data.xml` file (default: "company")
+  -t, --type [company]  set the type of the new `data.yml` file (default: "company")
   -h, --help            display help for command
 ```
 
