@@ -20,6 +20,7 @@
 {{#if images.logos}}
 <meta property="og:logo" content="{{company.baseURL}}/{{presskit.path}}/images/{{lookup images.logos 0}}">
 {{/if}}
+<meta property="og:url" content="{{company.baseURL}}/{{presskit.path}}/">
 
 {{else if presskit.baseURL}}
 
@@ -30,6 +31,7 @@
 {{#if images.logos}}
 <meta property="og:logo" content="{{presskit.baseURL}}/images/{{lookup images.logos 0}}">
 {{/if}}
+<meta property="og:url" content="{{presskit.baseURL}}/">
 
 {{/if}}
 
