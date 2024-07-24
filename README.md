@@ -21,7 +21,7 @@ It lets you present your brand story, press releases, media assets, and key team
 
 You will need a terminal and [Node.js](https://nodejs.org/en/download/package-manager).
 
-Install Milou using npm:
+Install Milou using [npm](https://www.npmjs.com/package/milou):
 
 ```shell
 npm install -g milou
