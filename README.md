@@ -45,6 +45,8 @@ Images named `header.*` (e.g. `header.png` or `header.jpg`) will be used in the 
 Files prefixed by `logo` (e.g. `logo01.png` or `logo.jpg`) will be put in the logos section of your page.
 Any other image in this folder will be included as an image in the generated press kit.
 
+To include a custom CSS file, create a file named `style.css` in your company folder. It will be automatically included in every page.
+
 ### Product
 
 Create a new sub-directory containing a product:
