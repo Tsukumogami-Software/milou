@@ -21,8 +21,8 @@
     "milou": "bin/milou"
   },
   "scripts": {
-    "start": "node bin/milou build --watch --dev data",
-    "build": "node bin/milou build --watch data",
+    "start": "nodemon --watch lib --watch assets -e 'js,css,html' -x 'node bin/milou build --watch data'",
+    "build": "node bin/milou build data",
     "test": "vitest run",
     "tester": "vitest",
     "docs": "./documentation",
@@ -45,6 +45,7 @@
     "yaml": "^2.5.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "snazzy": "^9.0.0",
     "standard": "^17.1.0",
     "vitest": "^2.0.5"
