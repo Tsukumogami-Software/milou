@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "node bin/milou build --watch --dev data",
-    "build": "node bin/milou build data",
+    "build": "node bin/milou build --watch data",
     "test": "vitest run",
     "tester": "vitest",
     "docs": "./documentation",

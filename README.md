@@ -117,7 +117,6 @@ Options:
   -V, --version               output the version number
   -o, --output [destination]  output the build folder to the [destination] (defaults to ./build) (default: "/Users/alicegg/Code/mypresskit/myproduct/build")
   -w, --watch                 watch project for changes and re-generate if needed
-  -d, --dev                   add monitoring of CSS and templates in watch mode
   -p, --port [8080]           set the server port to [8080] (default: 8080)
   -D, --clean-build-folder    delete the build folder beforehand
   -T, --ignore-thumbnails     use original images in galleries instead of thumbnails (will increase pages size)

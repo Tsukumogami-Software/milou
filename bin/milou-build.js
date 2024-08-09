@@ -19,7 +19,6 @@ program
     path.join(process.cwd(), 'build')
   )
   .option('-w, --watch', 'watch project for changes and re-generate if needed')
-  .option('-d, --dev', 'add monitoring of CSS and templates in watch mode')
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
@@ -32,5 +31,4 @@ presskit.runBuildCommand({
   output: program.opts().output,
   watch: program.opts().watch,
   port: program.opts().port,
-  dev: program.opts().dev
 })
