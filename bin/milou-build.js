@@ -30,5 +30,5 @@ presskit.runBuildCommand({
   ignoreThumbnails: program.opts().ignoreThumbnails,
   output: program.opts().output,
   watch: program.opts().watch,
-  port: program.opts().port,
+  port: program.opts().port
 })
