@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import chalk from 'chalk'
 import { Command } from 'commander'
 import version from "../lib/helpers/version.js"
 

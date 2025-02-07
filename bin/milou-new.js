@@ -12,6 +12,7 @@ const description = `Create an empty \`data.yml\` file and its \`images/\` folde
 const program = new Command()
 
 program
+  .allowExcessArguments()
   .version(version)
   .description(description)
   .usage(usage)

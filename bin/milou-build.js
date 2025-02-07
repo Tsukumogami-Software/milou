@@ -11,6 +11,7 @@ const description = 'Generate a presskit based on information found in `data.yml
 const program = new Command()
 
 program
+  .allowExcessArguments()
   .version(version)
   .description(description)
   .usage(usage)
