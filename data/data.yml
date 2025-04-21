@@ -104,3 +104,9 @@ contacts:
     link: https://facebook.com/pizzaburgerstudio
   - name: web
     link: http://pizzaburger.studio
+
+# Custom HTML head (for analytics, etc)
+headInject: >
+  <meta name="keywords" content="pizza, burger">
+
+  <meta name="author" content="Bob Burger">

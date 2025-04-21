@@ -70,3 +70,6 @@ credits:
 contacts:
   - name:
     mail:
+
+# Custom HTML head (for analytics, etc)
+headInject:

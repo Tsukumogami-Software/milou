@@ -151,3 +151,9 @@ contacts:
     link: https://facebook.com/pizzaburgerstudio
   - name: Web
     link: http://mysupergame.pizzaburger.studio/
+
+# Custom HTML head (for analytics, etc)
+headInject: >
+  <meta name="keywords" content="super, game">
+
+  <meta name="author" content="Alice GG">
