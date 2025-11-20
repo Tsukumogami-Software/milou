@@ -1,6 +1,6 @@
 {
   "name": "milou",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A static site generator for press kits",
   "license": "MIT",
   "repository": "Tsukumogami-Software/milou",
@@ -33,22 +33,22 @@
   "dependencies": {
     "archiver": "^7.0.1",
     "browser-sync": "^3.0.4",
-    "chalk": "^5.4.1",
+    "chalk": "^5.6.2",
     "chokidar": "^4.0.3",
     "commander": "^13.1.0",
-    "fs-extra": "^11.3.0",
+    "fs-extra": "^11.3.2",
     "handlebars": "^4.7.8",
     "mkdirp": "^3.0.1",
-    "rimraf": "^6.0.1",
-    "sharp": "^0.34.1",
+    "rimraf": "^6.1.2",
+    "sharp": "^0.34.5",
     "upath": "^2.0.1",
-    "yaml": "^2.7.1"
+    "yaml": "^2.8.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9",
+    "nodemon": "^3.1.11",
     "snazzy": "^9.0.0",
     "standard": "^17.1.2",
-    "vitest": "^3.1.2"
+    "vitest": "^4.0.11"
   },
   "standard": {
     "globals": [
