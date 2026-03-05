@@ -7,28 +7,37 @@
       <dt>Developer:</dt>
       <dd>
         <a href=".">{{presskit.title}}</a>
+      {{#if presskit.basedIn}}
       <dd>Based in {{presskit.basedIn}}</dd>
+      {{/if}}
     </div>
 
+    {{#if presskit.foundingDate}}
     <div>
       <dt>Founding date:</dt>
       <dd>{{presskit.foundingDate}}</dd>
     </div>
+    {{/if}}
 
+    {{#if presskit.website}}
     <div>
       <dt>Website:</dt>
       <dd>
         <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
       </dd>
     </div>
+    {{/if}}
 
+    {{#if presskit.pressContact}}
     <div>
       <dt>Press / Business contact:</dt>
       <dd>
         <a href="mailto:{{presskit.pressContact}}">{{presskit.pressContact}}</a>
       </dd>
     </div>
+    {{/if}}
 
+    {{#if presskit.socials}}
     <div>
       <dt>Social:</dt>
       {{#each presskit.socials}}
@@ -37,7 +46,9 @@
       </dd>
       {{/each}}
     </div>
+    {{/if}}
 
+    {{#if products}}
     <div>
       <dt>Releases:</dt>
       {{#each products}}
@@ -46,18 +57,24 @@
       </dd>
       {{/each}}
     </div>
+    {{/if}}
 
+    {{#if presskit.address}}
     <div>
       <dt>Address:</dt>
       {{#each presskit.address}}
       <dd>{{.}}</dd>
       {{/each}}
     </div>
+    {{/if}}
 
+    {{#if presskit.phone}}
     <div>
       <dt>Phone:</dt>
       <dd>{{presskit.phone}}</dd>
     </div>
+    {{/if}}
+
   </dl>
   {{/if}}
 
@@ -68,7 +85,9 @@
       <dd>
         <a href="..">{{company.title}}</a>
       </dd>
+      {{#if company.basedIn}}
       <dd>Based in {{company.basedIn}}</dd>
+      {{/if}}
     </div>
 
     {{#each presskit.partners}}
@@ -85,13 +104,16 @@
     </div>
     {{/each}}
 
+    {{#if presskit.releaseDates}}
     <div>
       <dt>Release date:</dt>
       {{#each presskit.releaseDates}}
       <dd>{{.}}</dd>
       {{/each}}
     </div>
+    {{/if}}
 
+    {{#if presskit.platforms}}
     <div>
       <dt>Platforms:</dt>
       {{#each presskit.platforms}}
@@ -104,20 +126,25 @@
       </dd>
       {{/each}}
     </div>
+    {{/if}}
 
+    {{#if presskit.website}}
     <div>
       <dt>Website:</dt>
       <dd>
         <a href="{{presskit.website}}">{{prettyURL presskit.website}}</a>
       </dd>
     </div>
+    {{/if}}
 
+    {{#if presskit.prices}}
     <div>
       <dt>Regular Price:</dt>
       {{#each presskit.prices}}
       <dd>{{currency}} {{value}}</dd>
       {{/each}}
     </div>
+    {{/if}}
 
     {{#each presskit.relations}}
     <div>
