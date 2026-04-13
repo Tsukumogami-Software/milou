@@ -125,7 +125,8 @@ Options:
   -D, --clean-build-folder    delete the build folder beforehand
   -T, --ignore-thumbnails     use original images in galleries instead of thumbnails (will increase pages size)
   --no-zip                    disable creating archives for images
-  --s3-bucket [bucket]        the s3 bucket to use for storing archives
+  --s3-bucket [bucket]        the S3 bucket to use for storing archives
+  --s3-public-url [url]       the public URL of your S3 bucket for archives
   -h, --help                  display help for command
 ```
 
@@ -148,7 +149,7 @@ You'll need to make sure those environment variables are configured with your cr
 * AWS_SECRET_ACCESS_KEY
 * AWS_REGION
 
-Then pass the bucket you want to target using the `--s3-bucket` argument.
+Then pass the bucket you want to target using the `--s3-bucket` argument, as well as the public URL of you bucket using `--s3-public-url`.
 
 ## Credits
 
