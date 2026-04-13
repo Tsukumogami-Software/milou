@@ -31,6 +31,8 @@
     "lint": "standard | snazzy"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1029.0",
+    "@aws-sdk/lib-storage": "^3.1029.0",
     "archiver": "^7.0.1",
     "browser-sync": "^3.0.4",
     "chalk": "^5.6.2",
