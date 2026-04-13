@@ -32,3 +32,4 @@ build/
 
 # Bower stuff.
 bower_components/
+.aider*
