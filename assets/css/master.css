@@ -201,6 +201,13 @@ a:hover {
   text-decoration: underline;
 }
 
+a.button-secondary,
+a.button-secondary:visited,
+a.button-secondary:hover {
+  color: rgba(22, 22, 22, 0.8);
+  text-decoration: none;
+}
+
 a:focus {
   outline: thin dotted;
 }
