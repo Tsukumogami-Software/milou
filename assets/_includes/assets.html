@@ -42,11 +42,13 @@
 <section class="block">
   <h2 id="images">Images</h2>
 
+  {{#if hasZip}}
   <div>
     <a class="button-secondary"  href="images/images.zip">
       Download as .zip
     </a>
   </div>
+  {{/if}}
 
   <div class="gallery clearfix" id="gallery">
     {{#each images.screenshots}}
@@ -79,11 +81,13 @@
 <section class="block">
   <h2 id="logo">Logo & Icon</h2>
 
+  {{#if hasZip}}
   <div>
     <a class="button-secondary" href="images/logo.zip">
       Download as .zip
     </a>
   </div>
+  {{/if}}
 
   {{#each images.logos}}
   <a href="images/{{.}}">
