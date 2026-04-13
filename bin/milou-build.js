@@ -23,6 +23,7 @@ program
   .option('-p, --port [8080]', 'set the server port to [8080]', 8080)
   .option('-D, --clean-build-folder', 'delete the build folder beforehand')
   .option('-T, --ignore-thumbnails', 'use original images in galleries instead of thumbnails (will increase pages size)')
+  .option('--no-zip', 'disable creating archives for images')
   .option('--s3-bucket [bucket]', 'the s3 bucket to use for storing archives')
   .parse(process.argv)
 
@@ -33,5 +34,6 @@ presskit.runBuildCommand({
   output: program.opts().output,
   watch: program.opts().watch,
   port: program.opts().port,
-  s3Bucket: program.opts().s3Bucket
+  s3Bucket: program.opts().s3Bucket,
+  zip: program.opts().zip, //commanded automaticall turns no-zip into zip=false
 })
