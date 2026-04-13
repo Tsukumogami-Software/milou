@@ -124,8 +124,31 @@ Options:
   -p, --port [8080]           set the server port to [8080] (default: 8080)
   -D, --clean-build-folder    delete the build folder beforehand
   -T, --ignore-thumbnails     use original images in galleries instead of thumbnails (will increase pages size)
+  --no-zip                    disable creating archives for images
+  --s3-bucket [bucket]        the s3 bucket to use for storing archives
   -h, --help                  display help for command
 ```
+
+## Troubleshooting
+
+### Image archives are too large
+
+Milou will automatically create .zip archives containing the images and logo available on each page.
+This helps journalists easily download all your assets (instead of having to manually right click on each image).
+
+The resulting file might be very large and go above the limit set by your hosting provider.
+
+If you are not interested in this feature, you can simply disable it using the `--no-zip` command line argument.
+
+Otherwise, you can upload those archives to an S3-compatible storage (AWS S3, CloudFlare R2, Google Cloud Storage, etc...).
+You'll need to make sure those environment variables are configured with your credentials:
+
+* AWS_ENDPOINT_URL_S3
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* AWS_REGION
+
+Then pass the bucket you want to target using the `--s3-bucket` argument.
 
 ## Credits
 
